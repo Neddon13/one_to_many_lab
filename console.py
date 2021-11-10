@@ -19,7 +19,8 @@ book_repository.save(book_3)
 book_4 = Book("Fantastic Beasts", "Fantasy", author_1)
 book_repository.save(book_4)
 
-
+for book in book_repository.select_all():
+    print(book.__dict__)
 
 
 
